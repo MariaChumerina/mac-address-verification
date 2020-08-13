@@ -9,7 +9,7 @@
         oui
       </td>
       <td>
-        {{vendorDetails.oui}}
+        {{vendorDetails.oui || 'нет'}}
       </td>
     </tr>
     <tr>
@@ -20,28 +20,28 @@
         {{vendorDetails.isPrivate ? 'да' : 'нет'}}
       </td>
     </tr>
-    <tr *ngIf="vendorDetails.companyAddresses">
+    <tr>
       <td>
         адрес компании
       </td>
       <td>
-        {{vendorDetails.companyAddresses ? vendorDetails.companyAddresses : 'нет'}}
+        {{vendorDetails.companyAddresses || 'нет'}}
       </td>
     </tr>
-    <tr *ngIf="vendorDetails.companyName">
+    <tr>
       <td>
         название компании
       </td>
       <td>
-        {{vendorDetails.companyName}}
+        {{vendorDetails.companyName || 'нет'}}
       </td>
     </tr>
-    <tr *ngIf="vendorDetails.countryCode">
+    <tr>
       <td>
         код страны
       </td>
       <td>
-        {{vendorDetails.countryCode}}
+        {{vendorDetails.countryCode || 'нет'}}
       </td>
     </tr>
     </tbody>

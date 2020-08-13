@@ -28,28 +28,28 @@
         {{macAddressDetails.virtualMachine}}
       </td>
     </tr>
-    <tr *ngIf="macAddressDetails.applications.length > 0">
+    <tr>
       <td>
         приложения
       </td>
       <td>
-        {{macAddressDetails.applications}}
+        {{macAddressDetails.applications.length > 0 || 'нет'}}
       </td>
     </tr>
-    <tr *ngIf="macAddressDetails.wiresharkNotes">
+    <tr>
       <td>
         дополнительные сведения
       </td>
       <td>
-        {{macAddressDetails.wiresharkNotes}}
+        {{macAddressDetails.wiresharkNotes || 'нет'}}
       </td>
     </tr>
-    <tr *ngIf="macAddressDetails.comment">
+    <tr>
       <td>
         комментарии
       </td>
       <td>
-        {{macAddressDetails.comment}}
+        {{macAddressDetails.comment || 'нет'}}
       </td>
     </tr>
     </tbody>
