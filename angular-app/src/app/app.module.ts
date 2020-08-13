@@ -10,7 +10,7 @@ import { HttpClientModule }   from '@angular/common/http';
 import { ResultComponent } from './components/result/result.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
-import { MacAddressesDetailsComponent } from './components/mac-addresses-details/mac-addresses-details.component';
+import { MacAddressDetailsComponent } from './components/mac-address-details/mac-address-details.component';
 import { VendorDetailsComponent } from './components/vendor-details/vendor-details.component';
 import { BlockDetailsComponent } from './components/block-details/block-details.component';
 
@@ -21,7 +21,7 @@ import { BlockDetailsComponent } from './components/block-details/block-details.
     VerifiedMacAddressesComponent,
     ResultComponent,
     HomeComponent,
-    MacAddressesDetailsComponent,
+    MacAddressDetailsComponent,
     VendorDetailsComponent,
     BlockDetailsComponent,
   ],

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { VerifiedMacAddress } from "../../domain/verified-mac-address";
 import { HttpService } from "../../services/http.service";
 import { sessionSaver } from "../../services/session-saver.service";
-import { MacAddressesInfo } from "../../domain/mac-adresses-info";
+import { MacAddressesInfo } from "../../domain/mac-addresses-info";
 
 @Component({
   selector: 'app-home',
