@@ -4,7 +4,7 @@
 .form-field {
   font-size: 14px;
   width: 20vw;
-  height: 33px;
+  height: 40px;
   padding: 0 14px;
   border: 2px solid #ddd;
   border-radius: 4px;
@@ -17,6 +17,7 @@
 button {
   background-color: #65a3be;
   border-radius: 4px;
+  height: 40px;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -30,14 +31,27 @@ button:hover {
 button:focus {
   outline: none;
 }
-.margin-top-15 {
-  margin-top: 15px;
+form {
+  position: relative;
+}
+.input-error {
+  position: absolute;
+  color: red;
+  font-size: 14px;
+  left: 0;
+  top: 64px;
 }
 @media screen and (max-width: 767px) {
   .form-field {
-    width: 55vw;
+    width: 90vw;
+  }
+  .verification-container {
+    width: 90vw;
   }
   button {
-    margin: 10px 0;
+    margin: 20px 0;
+  }
+  .input-error {
+    top: 62px;
   }
 }

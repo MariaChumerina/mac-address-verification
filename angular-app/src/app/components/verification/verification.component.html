@@ -1,14 +1,17 @@
 <form #formVerification="ngForm" class="verification-container">
   <input
     type="text"
-    class="form-field margin-top-15"
-    placeholder="Введите mac-адрес"
+    class="form-field mt-4"
+    placeholder="FF:FF:FF:FF:FF:FF"
     [(ngModel)]="macAddress"
     name="macAddress"
     required
   />
-  <button type="submit" (click)="onSubmit.emit(formVerification.value.macAddress)">
-    Подтвердить
+  <span class="input-error" *ngIf="error">
+    {{error}}
+  </span>
+  <button type="submit" (click)="handleSubmit(formVerification.value.macAddress)">
+    Проверить
   </button>
 </form>
 

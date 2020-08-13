@@ -2,7 +2,7 @@
   <h3 class="mt-5">
     Информация о mac-адресе
   </h3>
-  <table class="table mt-4">
+  <table class="table table-responsive mt-4">
     <tbody>
     <tr>
       <td>
@@ -59,7 +59,7 @@
   <h3>
     Информация о вендоре
   </h3>
-  <table class="table mt-4">
+  <table class="table table-responsive mt-4">
     <tbody>
     <tr>
       <td>
@@ -108,7 +108,7 @@
   <h3>
      Блок адресов
   </h3>
-  <table class="table mt-4">
+  <table class="table table-responsive mt-4">
     <tbody>
     <tr>
       <td>
@@ -128,7 +128,7 @@
     </tr>
     <tr *ngIf="blockDetails.blockFound">
       <td>
-        block size
+        количество mac-адресов в этом диапазоне
       </td>
       <td>
         {{blockDetails.blockSize}}

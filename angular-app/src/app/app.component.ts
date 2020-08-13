@@ -11,13 +11,15 @@ import { VerifiedMacAddress } from "./domain/verified-mac-address";
 export class AppComponent {
   title = 'Проверка mac-адресов';
   verifiedMacAddress: VerifiedMacAddress;
+  error: string;
 
   constructor(private httpService: HttpService) { }
 
-  onSubmit(macAddress) {
+  checkMacAddress(macAddress) {
     this.httpService.getData(macAddress).subscribe((data: VerifiedMacAddress) => {
       this.verifiedMacAddress = data;
       console.log(data.macAddressDetails);
     });
+
   }
 }
