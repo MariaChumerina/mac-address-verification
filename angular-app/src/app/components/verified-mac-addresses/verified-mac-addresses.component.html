@@ -1,3 +1,23 @@
-<div>
-  hello
+<h1>
+  Проверенные mac-адреса
+</h1>
+<div class="d-md-flex mt-4 verified-address-block">
+  <div class="border">
+    <div *ngFor="let address of verifiedMacAddresses">
+      <button class="btn btn-link" (click)="handleShowInfo(address)">
+        {{address.macAddress}}
+      </button>
+    </div>
+  </div>
+  <div class="address-detail border" *ngIf="addressInfo">
+    <app-mac-addresses-details [macAddressesDetails]="macAddressDetails"></app-mac-addresses-details>
+    <div class="mt-3">
+      <app-block-details [blockDetails]="blockDetails"></app-block-details>
+    </div>
+    <div class="mt-3">
+      <app-vendor-details [vendorDetails]="vendorDetails"></app-vendor-details>
+    </div>
+  </div>
 </div>
+
+

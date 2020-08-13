@@ -16,7 +16,8 @@ export class VerificationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  handleSubmit(macAddress: string) {
+  handleSubmit(value) {
+    const macAddress = value.macAddress;
     const regExp = new RegExp(/^((([a-fA-F0-9][a-fA-F0-9]+[-]){5}|([a-fA-F0-9][a-fA-F0-9]+[:]){5})([a-fA-F0-9][a-fA-F0-9])$)|(^([a-fA-F0-9][a-fA-F0-9][a-fA-F0-9][a-fA-F0-9]+[.]){2}([a-fA-F0-9][a-fA-F0-9][a-fA-F0-9][a-fA-F0-9]))$/);
     if (!macAddress) {
       this.error = 'пожалуйста, введите mac-адрес';

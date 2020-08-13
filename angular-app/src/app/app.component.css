@@ -6,9 +6,4 @@
   padding-left: 0;
   padding-right: 0;
 }
-@media screen and (max-width: 767px) {
-  h1 {
-    font-size: 24px;
-  }
-}
 

@@ -1,3 +1,9 @@
+<h1>
+  Проверка mac-адресов
+</h1>
+<a class="link" routerLink="/verified-mac-addresses" routerLinkActive="active">
+  Проверенные адреса
+</a>
 <app-verification (checkMacAddress)=checkMacAddress($event)></app-verification>
 <app-result [verifiedMacAddress]="verifiedMacAddress"></app-result>
 

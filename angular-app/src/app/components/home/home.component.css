@@ -1,0 +1,13 @@
+.link {
+  color: #0f7ef1;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
+}

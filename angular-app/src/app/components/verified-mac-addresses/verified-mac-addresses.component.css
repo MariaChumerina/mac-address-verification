@@ -1,0 +1,26 @@
+.verified-address-block {
+  position: relative;
+}
+.address-detail {
+  position: absolute;
+  right: 30vw;
+}
+.border {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 20px;
+}
+@media screen and (max-width: 1240px) {
+  .address-detail {
+    right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
+  .address-detail {
+    position: relative;
+    margin-top: 20px;
+  }
+}

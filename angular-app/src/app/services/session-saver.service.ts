@@ -8,7 +8,7 @@ class SessionSaver {
 
   getMacAddressesInfo() {
     const serializedAddresses = localStorage.getItem(SessionSaver.MAC_ADDRESSES_INFO_KEY) || '';
-    return JSON.parse(serializedAddresses);
+    return serializedAddresses.length > 0 ? JSON.parse(serializedAddresses) : [];
   }
 }
 
