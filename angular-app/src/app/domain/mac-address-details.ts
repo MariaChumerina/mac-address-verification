@@ -1,4 +1,4 @@
-export interface MacAddressesDetails {
+export interface MacAddressDetails {
   administrationType: string,
   applications: any,
   comment: string,

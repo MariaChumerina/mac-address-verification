@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MacAddressesDetails } from "../../domain/mac-addresses-details";
+import { MacAddressDetails } from "../../domain/mac-address-details";
 
 @Component({
   selector: 'app-mac-addresses-details',
@@ -7,6 +7,6 @@ import { MacAddressesDetails } from "../../domain/mac-addresses-details";
   styleUrls: ['./mac-addresses-details.component.css']
 })
 export class MacAddressesDetailsComponent {
-  @Input() macAddressesDetails: MacAddressesDetails;
+  @Input() macAddressDetails: MacAddressDetails;
 
 }

@@ -1,4 +1,4 @@
-<div *ngIf="macAddressesDetails">
+<div *ngIf="macAddressDetails">
   <h3>
     Информация о mac-адресе
   </h3>
@@ -9,7 +9,7 @@
         тип администрирования
       </td>
       <td>
-        {{macAddressesDetails.administrationType}}
+        {{macAddressDetails.administrationType}}
       </td>
     </tr>
     <tr>
@@ -17,7 +17,7 @@
         тип трансмиссии
       </td>
       <td>
-        {{macAddressesDetails.transmissionType}}
+        {{macAddressDetails.transmissionType}}
       </td>
     </tr>
     <tr>
@@ -25,31 +25,31 @@
         виртуальная машина
       </td>
       <td>
-        {{macAddressesDetails.virtualMachine}}
+        {{macAddressDetails.virtualMachine}}
       </td>
     </tr>
-    <tr *ngIf="macAddressesDetails.applications.length > 0">
+    <tr *ngIf="macAddressDetails.applications.length > 0">
       <td>
         приложения
       </td>
       <td>
-        {{macAddressesDetails.applications}}
+        {{macAddressDetails.applications}}
       </td>
     </tr>
-    <tr *ngIf="macAddressesDetails.wiresharkNotes">
+    <tr *ngIf="macAddressDetails.wiresharkNotes">
       <td>
         дополнительные сведения
       </td>
       <td>
-        {{macAddressesDetails.wiresharkNotes}}
+        {{macAddressDetails.wiresharkNotes}}
       </td>
     </tr>
-    <tr *ngIf="macAddressesDetails.comment">
+    <tr *ngIf="macAddressDetails.comment">
       <td>
         комментарии
       </td>
       <td>
-        {{macAddressesDetails.comment}}
+        {{macAddressDetails.comment}}
       </td>
     </tr>
     </tbody>

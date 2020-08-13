@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { VerifiedMacAddress } from "../../domain/verified-mac-address";
-import { MacAddressesDetails } from "../../domain/mac-addresses-details";
+import { MacAddressDetails } from "../../domain/mac-address-details";
 import { VendorDetails } from "../../domain/vendor-details";
 import { BlockDetails } from "../../domain/block-details";
 
@@ -10,13 +10,13 @@ import { BlockDetails } from "../../domain/block-details";
   styleUrls: ['./result.component.css']
 })
 export class ResultComponent {
-  macAddressesDetails: MacAddressesDetails;
+  macAddressDetails: MacAddressDetails;
   vendorDetails: VendorDetails;
   blockDetails: BlockDetails;
 
   @Input()
   set verifiedMacAddress(verifiedMacAddress: VerifiedMacAddress) {
-    this.macAddressesDetails = verifiedMacAddress.macAddressDetails;
+    this.macAddressDetails = verifiedMacAddress.macAddressDetails;
     this.vendorDetails = verifiedMacAddress.vendorDetails;
     this.blockDetails = verifiedMacAddress.blockDetails;
   }

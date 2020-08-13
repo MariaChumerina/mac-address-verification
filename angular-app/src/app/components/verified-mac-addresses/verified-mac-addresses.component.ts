@@ -1,10 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import {MacAddressesInfo} from "../../domain/mac-adresses-info";
-import {sessionSaver} from "../../services/session-saver.service";
-import {MacAddressesDetails} from "../../domain/mac-addresses-details";
-import {BlockDetails} from "../../domain/block-details";
-import {VendorDetails} from "../../domain/vendor-details";
-import {VerifiedMacAddress} from "../../domain/verified-mac-address";
+import { Component, OnInit } from '@angular/core';
+import { MacAddressesInfo } from "../../domain/mac-adresses-info";
+import { sessionSaver } from "../../services/session-saver.service";
+import { MacAddressDetails } from "../../domain/mac-address-details";
+import { BlockDetails } from "../../domain/block-details";
+import { VendorDetails } from "../../domain/vendor-details";
+import { VerifiedMacAddress}  from "../../domain/verified-mac-address";
 
 @Component({
   selector: 'app-verified-mac-addresses',
@@ -14,7 +14,7 @@ import {VerifiedMacAddress} from "../../domain/verified-mac-address";
 export class VerifiedMacAddressesComponent implements OnInit {
   verifiedMacAddresses: MacAddressesInfo[];
   addressInfo: VerifiedMacAddress;
-  macAddressDetails: MacAddressesDetails;
+  macAddressDetails: MacAddressDetails;
   blockDetails: BlockDetails;
   vendorDetails: VendorDetails;
 
