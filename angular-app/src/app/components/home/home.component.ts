@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
 
   saveMacAddress(macAddress: string, info: VerifiedMacAddress): void {
     const savedAddresses = sessionSaver.getMacAddressesInfo();
-    const filtered = savedAddresses.filter((el) => el.macAddress === macAddress);
-    if (filtered.length < 1) {
+    const macAddresses = savedAddresses.map((el) => el.macAddress);
+    if (!macAddresses.includes(macAddress)) {
       this.verifiedMacAddresses = [... this.verifiedMacAddresses, { macAddress, info }];
       sessionSaver.setMacAddressInfo(this.verifiedMacAddresses);
     }
