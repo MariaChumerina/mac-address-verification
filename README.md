@@ -3,7 +3,7 @@ SPA application for verification MAC addresses via API
 </br>
 <b>Copy project and run:</b>
 ```sh
-cd Angular-app
+cd angular-app
 ```
 
 ```sh
