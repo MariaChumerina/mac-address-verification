@@ -1,0 +1,40 @@
+.verification-container {
+  width: 50vw;
+}
+.form-field {
+  font-size: 14px;
+  width: 20vw;
+  height: 33px;
+  padding: 0 14px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  outline: 0;
+  transition: .2s;
+}
+.form-field:focus {
+  border-color: #0f7ef1;
+}
+button {
+  background-color: #65a3be;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:focus {
+  outline: none;
+}
+@media screen and (max-width: 767px) {
+  .form-field {
+    width: 55vw;
+  }
+  button {
+    margin: 10px 0;
+  }
+}
