@@ -10,6 +10,9 @@ import { HttpClientModule }   from '@angular/common/http';
 import { ResultComponent } from './components/result/result.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
+import { MacAddressesDetailsComponent } from './components/mac-addresses-details/mac-addresses-details.component';
+import { VendorDetailsComponent } from './components/vendor-details/vendor-details.component';
+import { BlockDetailsComponent } from './components/block-details/block-details.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { HomeComponent } from './components/home/home.component';
     VerifiedMacAddressesComponent,
     ResultComponent,
     HomeComponent,
+    MacAddressesDetailsComponent,
+    VendorDetailsComponent,
+    BlockDetailsComponent,
   ],
   imports: [
     BrowserModule,

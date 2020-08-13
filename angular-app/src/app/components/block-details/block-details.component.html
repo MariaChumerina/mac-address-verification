@@ -1,0 +1,65 @@
+<div  class="mt-5" *ngIf="blockDetails">
+  <h3>
+    Блок адресов
+  </h3>
+  <table class="table table-responsive mt-4">
+    <tbody>
+    <tr>
+      <td>
+        зарегистрирован mac-bloc
+      </td>
+      <td>
+        {{blockDetails.blockFound ? 'да' : 'нет'}}
+      </td>
+    </tr>
+    <tr *ngIf="blockDetails.blockFound">
+      <td>
+        размер блока
+      </td>
+      <td>
+        {{blockDetails.assignmentBlockSize}}
+      </td>
+    </tr>
+    <tr *ngIf="blockDetails.blockFound">
+      <td>
+        количество mac-адресов в этом диапазоне
+      </td>
+      <td>
+        {{blockDetails.blockSize}}
+      </td>
+    </tr>
+    <tr *ngIf="blockDetails.blockFound">
+      <td>
+        левая граница диапазона
+      </td>
+      <td>
+        {{blockDetails.borderLeft}}
+      </td>
+    </tr>
+    <tr *ngIf="blockDetails.blockFound">
+      <td>
+        правая граница диапазона
+      </td>
+      <td>
+        {{blockDetails.borderRight}}
+      </td>
+    </tr>
+    <tr *ngIf="blockDetails.blockFound">
+      <td>
+        дата создания
+      </td>
+      <td>
+        {{blockDetails.dateCreated}}
+      </td>
+    </tr>
+    <tr *ngIf="blockDetails.blockFound">
+      <td>
+        дата обновления
+      </td>
+      <td>
+        {{blockDetails.dateUpdated}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

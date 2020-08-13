@@ -9,5 +9,4 @@ import { HttpService } from "./services/http.service";
 })
 export class AppComponent {
   title = 'Проверка mac-адресов';
-
 }

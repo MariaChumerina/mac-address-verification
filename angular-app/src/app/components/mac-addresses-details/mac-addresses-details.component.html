@@ -1,0 +1,57 @@
+<div *ngIf="macAddressesDetails">
+  <h3 class="mt-5">
+    Информация о mac-адресе
+  </h3>
+  <table class="table table-responsive mt-4">
+    <tbody>
+    <tr>
+      <td>
+        тип администрирования
+      </td>
+      <td>
+        {{macAddressesDetails.administrationType}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        тип трансмиссии
+      </td>
+      <td>
+        {{macAddressesDetails.transmissionType}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        виртуальная машина
+      </td>
+      <td>
+        {{macAddressesDetails.virtualMachine}}
+      </td>
+    </tr>
+    <tr *ngIf="macAddressesDetails.applications.length > 0">
+      <td>
+        приложения
+      </td>
+      <td>
+        {{macAddressesDetails.applications}}
+      </td>
+    </tr>
+    <tr *ngIf="macAddressesDetails.wiresharkNotes">
+      <td>
+        дополнительные сведения
+      </td>
+      <td>
+        {{macAddressesDetails.wiresharkNotes}}
+      </td>
+    </tr>
+    <tr *ngIf="macAddressesDetails.comment">
+      <td>
+        комментарии
+      </td>
+      <td>
+        {{macAddressesDetails.comment}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

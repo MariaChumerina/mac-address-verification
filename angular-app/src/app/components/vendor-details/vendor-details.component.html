@@ -1,0 +1,49 @@
+<div  class="mt-5" *ngIf="vendorDetails">
+  <h3>
+    Информация о вендоре
+  </h3>
+  <table class="table table-responsive mt-4">
+    <tbody>
+    <tr>
+      <td>
+        oui
+      </td>
+      <td>
+        {{vendorDetails.oui}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        приватность информации
+      </td>
+      <td>
+        {{vendorDetails.isPrivate ? 'да' : 'нет'}}
+      </td>
+    </tr>
+    <tr *ngIf="vendorDetails.companyAddresses">
+      <td>
+        адрес компании
+      </td>
+      <td>
+        {{vendorDetails.companyAddresses ? vendorDetails.companyAddresses : 'нет'}}
+      </td>
+    </tr>
+    <tr *ngIf="vendorDetails.companyName">
+      <td>
+        название компании
+      </td>
+      <td>
+        {{vendorDetails.companyName}}
+      </td>
+    </tr>
+    <tr *ngIf="vendorDetails.countryCode">
+      <td>
+        код страны
+      </td>
+      <td>
+        {{vendorDetails.countryCode}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
