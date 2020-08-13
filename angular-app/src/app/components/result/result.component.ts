@@ -16,9 +16,11 @@ export class ResultComponent {
 
   @Input()
   set verifiedMacAddress(verifiedMacAddress: VerifiedMacAddress) {
-    this.macAddressDetails = verifiedMacAddress.macAddressDetails;
-    this.vendorDetails = verifiedMacAddress.vendorDetails;
-    this.blockDetails = verifiedMacAddress.blockDetails;
+    if (verifiedMacAddress) {
+      this.macAddressDetails = verifiedMacAddress.macAddressDetails;
+      this.vendorDetails = verifiedMacAddress.vendorDetails;
+      this.blockDetails = verifiedMacAddress.blockDetails;
+    }
   }
 
 }
