@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import { VerifiedMacAddress } from "../../domain/verified-mac-address";
 
 @Component({
   selector: 'app-verified-mac-addresses',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./verified-mac-addresses.component.css']
 })
 export class VerifiedMacAddressesComponent implements OnInit {
-
+  @Input() verifiedMacAddress: VerifiedMacAddress;
   constructor() { }
 
   ngOnInit(): void {

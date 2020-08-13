@@ -2,6 +2,6 @@
   <h1>
     {{title}}
   </h1>
-  <app-verification></app-verification>
-  <app-verified-mac-addresses></app-verified-mac-addresses>
+  <app-verification (onSubmit)=onSubmit($event) ></app-verification>
+  <app-verified-mac-addresses [verifiedMacAddress]="verifiedMacAddress"></app-verified-mac-addresses>
 </div>

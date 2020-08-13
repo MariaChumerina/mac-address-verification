@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VerificationComponent } from './components/verification/verification.component';
 import { VerifiedMacAddressesComponent } from './components/verified-mac-addresses/verified-mac-addresses.component';
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule }   from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { VerifiedMacAddressesComponent } from './components/verified-mac-address
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
