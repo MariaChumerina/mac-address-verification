@@ -9,6 +9,7 @@ import { FormsModule } from "@angular/forms";
 import { HttpClientModule }   from '@angular/common/http';
 import { ResultComponent } from './components/result/result.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     VerificationComponent,
     VerifiedMacAddressesComponent,
     ResultComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
