@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { BlockDetails } from "../../domain/block-details";
 
 @Component({
@@ -6,11 +6,7 @@ import { BlockDetails } from "../../domain/block-details";
   templateUrl: './block-details.component.html',
   styleUrls: ['./block-details.component.css']
 })
-export class BlockDetailsComponent implements OnInit {
+export class BlockDetailsComponent {
   @Input() blockDetails: BlockDetails;
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

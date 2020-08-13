@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MacAddressesDetails } from "../../domain/mac-addresses-details";
 
 @Component({
@@ -6,11 +6,7 @@ import { MacAddressesDetails } from "../../domain/mac-addresses-details";
   templateUrl: './mac-addresses-details.component.html',
   styleUrls: ['./mac-addresses-details.component.css']
 })
-export class MacAddressesDetailsComponent implements OnInit {
+export class MacAddressesDetailsComponent {
   @Input() macAddressesDetails: MacAddressesDetails;
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

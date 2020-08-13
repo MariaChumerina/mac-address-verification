@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private httpService: HttpService) { }
 
-  saveMacAddress(macAddress, info) {
+  saveMacAddress(macAddress: string, info: VerifiedMacAddress): void {
     const savedAddresses = sessionSaver.getMacAddressesInfo();
     const filtered = savedAddresses.filter((el) => el.macAddress === macAddress);
     if (filtered.length < 1) {
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  checkMacAddress(macAddress) {
+  checkMacAddress(macAddress: string): void {
     this.httpService.getData(macAddress).subscribe((data: VerifiedMacAddress) => {
       this.verifiedMacAddress = data;
       this.saveMacAddress(macAddress, data);

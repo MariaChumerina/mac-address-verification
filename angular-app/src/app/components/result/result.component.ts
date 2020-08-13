@@ -1,15 +1,15 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { VerifiedMacAddress } from "../../domain/verified-mac-address";
-import {MacAddressesDetails} from "../../domain/mac-addresses-details";
-import {VendorDetails} from "../../domain/vendor-details";
-import {BlockDetails} from "../../domain/block-details";
+import { MacAddressesDetails } from "../../domain/mac-addresses-details";
+import { VendorDetails } from "../../domain/vendor-details";
+import { BlockDetails } from "../../domain/block-details";
 
 @Component({
   selector: 'app-result',
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.css']
 })
-export class ResultComponent implements OnInit {
+export class ResultComponent {
   macAddressesDetails: MacAddressesDetails;
   vendorDetails: VendorDetails;
   blockDetails: BlockDetails;
@@ -19,11 +19,6 @@ export class ResultComponent implements OnInit {
     this.macAddressesDetails = verifiedMacAddress.macAddressDetails;
     this.vendorDetails = verifiedMacAddress.vendorDetails;
     this.blockDetails = verifiedMacAddress.blockDetails;
-  }
-
-  constructor() { }
-
-  ngOnInit(): void {
   }
 
 }
