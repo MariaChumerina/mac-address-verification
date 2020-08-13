@@ -3,5 +3,6 @@
     {{title}}
   </h1>
   <app-verification (onSubmit)=onSubmit($event) ></app-verification>
-  <app-verified-mac-addresses [verifiedMacAddress]="verifiedMacAddress"></app-verified-mac-addresses>
+  <app-verified-mac-addresses></app-verified-mac-addresses>
+  <app-result [verifiedMacAddress]="verifiedMacAddress"></app-result>
 </div>

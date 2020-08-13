@@ -17,7 +17,7 @@ export class AppComponent {
   onSubmit(macAddress) {
     this.httpService.getData(macAddress).subscribe((data: VerifiedMacAddress) => {
       this.verifiedMacAddress = data;
-      console.log(data.vendorDetails);
+      console.log(data.macAddressDetails);
     });
   }
 }

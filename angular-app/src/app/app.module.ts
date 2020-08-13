@@ -7,18 +7,22 @@ import { VerificationComponent } from './components/verification/verification.co
 import { VerifiedMacAddressesComponent } from './components/verified-mac-addresses/verified-mac-addresses.component';
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule }   from '@angular/common/http';
+import { ResultComponent } from './components/result/result.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     VerificationComponent,
-    VerifiedMacAddressesComponent
+    VerifiedMacAddressesComponent,
+    ResultComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
